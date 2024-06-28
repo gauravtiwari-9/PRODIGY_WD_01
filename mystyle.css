@@ -1,0 +1,324 @@
+/* -------------- TASK - 1 ---------------- */
+
+
+
+/* ------------ BODY--------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #AFDDE5;
+}
+
+/* -------------- HEADER --------------*/
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: #003135;
+    color: white;
+    z-index: 1000;
+}
+
+header .intro {
+    text-align: left;
+    background-color: #024950;
+    color: white;
+    padding: 3px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    font-style: italic;
+}
+
+.intro h2 {
+    position: relative;
+    left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #964734;
+    color: #fff;
+}
+
+/*--------------- SECTION -------------------*/
+section {
+    position: relative;
+    top: 140px;
+    padding: 50px;
+    color: white;
+    /*margin-top: 60px; /* Ensure content does not overlap with fixed nav */
+}
+
+/* ------------------- HOME --------------------- */
+#home {
+    /*position: fixed;
+    top: 140px;
+    right: 0px;
+    width: 30%;*/
+    color: black;
+    background-color: white;
+    background-image: url("itrend1.jpg");
+    background-position: 50% 50px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#home h1 {
+    position: absolute;
+    top: 40px;
+    left: 180px;
+   /* border: solid red;*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 500%;
+}
+
+#home p {
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 200%;
+}
+
+#home h2 {
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 200%;
+}
+
+#home a {
+    border: solid yellow;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    font-size: 200%;
+    padding: 15px;
+    background-color: rgb(244, 165, 19);
+    color: white;
+}
+
+#home a:hover {
+    transition: scale 0.3s, color 0.3s, background-color 0.3s, border 0.3s;
+    scale: 98%;
+    color: black;
+    background-color: #AFDDE5;
+    border: solid black;
+}
+
+/* --------------------- SPOTLIGHT -------------------*/
+#spotlight {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 400px;
+}
+
+#spotlight h2 {
+    position: relative;
+    text-align: center;
+    top: -30px;
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+#spotlight .summer-outfit {
+    position: absolute;
+    top: 100px;
+    left: 7%;
+    background-color: white;
+    background-image: url("summer1.jpg");
+    background-repeat: no-repeat;
+    background-position: 35px 45px;
+    height: 390px;
+    width: 25%;
+    background-size: 80%;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#spotlight .gym-outfit {
+    position: absolute;
+    top: 100px;
+    left: 37.5%;
+    background-color: white;
+    background-image: url("gym1.jpg");
+    background-repeat: no-repeat;
+    background-position: 5px 45px;
+    height: 390px;
+    width: 25%;
+    background-size: 100%;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#spotlight .formal-outfit {
+    position: absolute;
+    top: 100px;
+    right: 7%;
+    background-color: white;
+    background-image: url("formal1.jpg");
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    height: 390px;
+    width: 25%;
+    background-size: 100%;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#spotlight .summer-outfit:hover, .gym-outfit:hover, .formal-outfit:hover {
+    transition: scale 0.3s, border 0.3s;
+    border: solid silver;
+    scale: 98%;
+}
+
+
+/*---------------------- STORE -------------------*/
+#store {
+    background-color: #AFDDE5;
+    color: black;
+    height: 500px;
+}
+
+#store h1 {
+    position: relative;
+    top: -50px;
+    font-size: 250%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.i1 {
+    position: absolute;
+    top: 100px;
+    height: 60%;
+    width: 20%;
+    background-image: url("itrend3.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.i2 {
+    position: absolute;
+    top: 100px;
+    left: 28%;
+    height: 60%;
+    width: 20%;
+    background-image: url("itrend7.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px; 
+    background-size: 100%;
+}
+
+.i3 {
+    position: absolute;
+    top: 100px;
+    left: 52%;
+    height: 60%;
+    width: 20%;
+    background-image: url("itrend4.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+
+.i4 {
+    position: absolute;
+    top: 100px;
+    right: 3.2%;
+    height: 60%;
+    width: 20%;
+    background-image: url("itrend8.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+
+#store a {
+    border:solid black;
+    position: absolute;
+    top: 500px;
+    left: 46%;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    padding: 15px;
+    font-size: 130%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#store a:hover {
+    transition: background-color 0.3s, color 0.3s, scale 0.3s, border 0.3s;
+    background-color: #003135;
+    color: white;
+    scale: 98%;
+    border: solid #8fc1e3;
+}
+
+/* ------------------ CONTACT US --------------------*/
+#contact {
+    background-color: white;
+    background-image: url("itrend2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0px;
+    height: 200px;
+}
+
+#contact h2 {
+    position: absolute;
+    top: 0px;
+    font-size: 250%;
+}
+
+#contact p {
+    position: absolute;
+    top: 100px;
+    font-size: 150%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact h3 {
+    position: absolute;
+    top: 250px;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*
+header.scrolled {
+    background-color: #222;
+}*/         
